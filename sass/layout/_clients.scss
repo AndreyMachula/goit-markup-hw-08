@@ -1,0 +1,36 @@
+.clients {
+  background-color: var(--primary-background-color);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 180px) / 6);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--fill-color-icon);
+    color: var(--fill-color-icon);
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  &__logo {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+  }
+}
