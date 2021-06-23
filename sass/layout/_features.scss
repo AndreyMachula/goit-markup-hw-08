@@ -1,0 +1,106 @@
+.features {
+  padding-bottom: 0;
+  &__item {
+    outline: 1px solid red;
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    margin-bottom: 30px;
+    border-radius: 4px;
+    // background-color: tomato;
+  }
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+    &__item {
+      //     width: 270px;
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    // &__list {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   margin-left: -30px;
+    //   margin-top: -30px;
+    // }
+    &__item {
+      //     width: 270px;
+      flex-basis: calc((100% - 120px) / 4);
+      margin-left: 30px;
+      margin-top: 30px;
+      outline: 1px solid red;
+    }
+  }
+}
+// .qualities {
+//   background-color: var(--primary-background-color);
+//   padding-top: 94px;
+//   &__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-top: -30px;
+//   }
+//   &__item {
+//     width: 270px;
+//     flex-basis: calc((100% - 120px) / 4);
+//     margin-left: 30px;
+//     margin-top: 30px;
+//   }
+//   &__images {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 270px;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+//     background-color: var(--secondary-background-color);
+//   }
+//   &__title {
+//     color: var(--title-text-color);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+//   }
+// }
