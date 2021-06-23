@@ -1,6 +1,6 @@
 .header {
-  padding-top: 16px;
-  padding-right: 16px;
+  // padding-top: 16px;
+  // padding-right: 16px;
   &__logo {
     color: var(--black-color-text);
     // margin-right: 93px;
@@ -10,29 +10,43 @@
     animation-iteration-count: 1;
   }
   &__container {
+    // 
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__mobile-menu-btn {
+  &__mobile-btn {
     line-height: 0;
     background-color: transparent;
     border: none;
     padding: 0;
   }
-  &__mobile-menu-icon {
+  &__mobile-icon {
     width: 40px;
     height: 40px;
     padding: 12px 8px;
   }
 }
-.menu {
-  display: none;
-}
-.contacts {
-  display: none;
-}
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+  .menu {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    &__mobile-btn {
+      display: none;
+    }
+  }
+}
 // .header {
 //   background-color: var(--primary-background-color);
 //   border-bottom: 1px solid var(--border-color);
