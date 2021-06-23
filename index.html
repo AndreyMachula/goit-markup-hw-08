@@ -24,15 +24,15 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="header__navigation">
           <a class="logo header__logo text animate__rubberBand" href="./index.html" lang="en">
             <span class="logo__accent">Web</span>Studio
-          </a>
+          </a> -->
 
-          <!--Site navigation-->
-          <ul class="menu list">
+    <!--Site navigation-->
+    <!-- <ul class="menu list">
             <li class="menu__item">
               <a class="menu__link active text font" href="./index.html">Студия</a>
             </li>
@@ -44,14 +44,14 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="header__mobile-menu-btn" data-menu-button>
-          <svg class="header__mobile-menu-icon">
+        <button type="button" class="header__mobile-btn" data-menu-button>
+          <svg class="header__mobile-icon">
             <use href="./images/sprite-ok.svg#icon-menu-burger"></use>
           </svg>
-        </button>
+        </button> -->
 
-        <!--Contacts-->
-        <ul class="contacts list">
+    <!--Contacts-->
+    <!-- <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link text font" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
@@ -68,110 +68,154 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn" data-menu-close>
-            <svg class="mobile-menu__close-icon" width="18" height="18">
+      <div class="mobile" data-menu>
+        <div class="container mobile__container">
+          <button type="button" class="mobile__close-btn" data-menu-close>
+            <svg class="mobile__close-icon" width="18" height="18">
               <use href="./images/sprite.svg#close-black"></use>
             </svg>
           </button>
-          <ul class="mobile-menu__nav list">
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link text">Студия</a>
+          <ul class="mobile__nav list">
+            <li class="mobile__nav-item">
+              <a href="./index.html" class="mobile__nav-link text">Студия</a>
             </li>
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link text">Портфолио</a>
+            <li class="mobile__nav-item">
+              <a href="./portfolio.html" class="mobile__nav-link text">Портфолио</a>
             </li>
-            <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link text">Контакты</a>
+            <li class="mobile__nav-item">
+              <a href="" class="mobile__nav-link text">Контакты</a>
             </li>
           </ul>
-          <ul class="mobile-menu__contacts list">
-            <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-link text" href="tel:+380961111111"
+          <ul class="mobile__contacts list">
+            <li class="mobile__contacts-item">
+              <a class="mobile__contacts-link mobile__contacts-tel text" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
-            <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-link text" href="mailto:info@devstudio.com"
+            <li class="mobile__contacts-item">
+              <a
+                class="mobile__contacts-link mobile__contacts-mail text"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
-          <ul class="mobile-menu__social list">
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link text">Instagram</a>
+          <ul class="mobile__social list">
+            <li class="mobile__social-item">
+              <a href="" class="mobile__social-link text">Instagram</a>
             </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link text">Twitter</a>
+            <li class="mobile__social-item">
+              <a href="" class="mobile__social-link text">Twitter</a>
             </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link text">Facebook</a>
+            <li class="mobile__social-item">
+              <a href="" class="mobile__social-link text">Facebook</a>
             </li>
-            <li class="mobile-menu__social-item">
-              <a href="" class="mobile-menu__social-link text">LinkedIn</a>
+            <li class="mobile__social-item">
+              <a href="" class="mobile__social-link text">LinkedIn</a>
             </li>
           </ul>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--Hero-->
-      <!-- <section class="hero">
-				<div class="container">
+      <!-- <section class="hero"> -->
+      <!-- <div class="container">
 					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 					<button class="button hero__btn" type="button" data-modal-open>Заказать услугу</button>
-				</div>
-			</section> -->
+				</div> -->
+      <!-- <div class="container">
+        <picture class="picture">
+          <source
+            srcset="./images/hero/hero-desktop.webp 1x, ./images/hero/hero-desktop@2x.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/hero/hero-desktop.jpg 1x, ./images/hero/hero-desktop@2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="./images/hero/hero-tablet.webp 1x, ./images/hero/hero-tablet@2x.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/hero/hero-tablet.jpg 1x, ./images/hero/hero-tablet@2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="./images/hero/hero-mobile.webp 1x, ./images/hero/hero-mobile@2x.webp 2x"
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/hero/hero-mobile.jpg 1x, ./images/hero/hero-mobile@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+
+          <img src="./images/hero/hero-mobile.jpg" alt="retina picture" class="picture-img" />
+        </picture>
+      </div> -->
+      <!-- </section> -->
 
       <!--Our qualities-->
-      <!-- <section class="qualities ">
-				<div class="container qualities-container">  -->
+      <section class="features section">
+        <div class="container features-container">
+          <!--Hidden title-->
+          <h2 class="visually-hidden">профессиональные качества</h2>
 
-      <!--Hidden title-->
-      <!-- <h2 class="visually-hidden">профессиональные качества</h2> -->
-
-      <!--Qualities list-->
-      <!-- <ul class="qualities__list list">
-						<li class="qualities__item">
-							<div class="qualities__images">
-								<svg class="qualities__icon" width="70" height="70">
-									<use href="./images/sprite.svg#antenna"></use>
-								</svg>
-							</div>
-							<h3 class="qualities__title">Внимание к деталям</h3>
-							<p class="qualities__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-						</li>
-						<li class="qualities__item">
-								<div class="qualities__images">
-									<svg class="qualities__icon" width="70" height="70">
-										<use href="./images/sprite.svg#clock"></use>
-									</svg>
-								</div>
-							<h3 class="qualities__title">Пунктуальность</h3>
-							<p class="qualities__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-						</li>
-						<li class="qualities__item">
-								<div class="qualities__images">
-									<svg class="qualities__icon" width="70" height="70">
-										<use href="./images/sprite.svg#diagram"></use>
-									</svg>
-								</div>
-							<h3 class="qualities__title">Планирование</h3>
-							<p class="qualities__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-						</li>
-						<li class="qualities__item">
-								<div class="qualities__images">
-									<svg class="qualities__icon" width="70" height="70">
-										<use href="./images/sprite.svg#astronaut"></use>
-									</svg>
-								</div>
-							<h3 class="qualities__title">Современные технологии</h3>
-							<p class="qualities__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-						</li>
-					</ul>
-				</div>
-			</section>  -->
+          <!--Qualities list-->
+          <ul class="features__list list">
+            <li class="features__item">
+              <div class="features__images">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__description">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__images">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__description">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__images">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__description">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__images">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__description">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--Our work-->
       <!-- <section class="work section">
@@ -203,177 +247,373 @@
 			</section> -->
 
       <!--Team-->
-      <!-- <section class="team section">
-				<div class="container">
-					<h2 class="section-title">Наша команда</h2>
-					<ul class="member list">
-						<li class="member__item">
-							<img class="member__img" src="./images/team/img_team_1.jpg" alt="сотрудник команды игорь" width="270" height="260">
-							<div class="member__card">
-								<h3 class="member__name">Игорь Демьяненко</h3>
-								<p class="member__position">Product Designer</p>
-								<ul class="social-networks list">
-									<li class="social-networks__item">
-										<a class="social-networks__link social-networks__link_member link" href="https://www.instagram.com/"
-											target="_blank" rel="noreferrer noopener">
-											<svg class="social-networks__icon">
-												<use href="./images/sprite.svg#instagram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social-networks__item">
-										<a class="social-networks__link social-networks__link_member link link" href="https://www.twitter.com/"
-											target="_blank" rel="noreferrer noopener">
-											<svg class="social-networks__icon">
-												<use href="./images/sprite.svg#twitter"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social-networks__item">
-										<a class="social-networks__link social-networks__link_member link link" href="https://www.facebook.com/"
-											target="_blank" rel="noreferrer noopener">
-											<svg class="social-networks__icon">
-												<use href="./images/sprite.svg#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social-networks__item">
-										<a class="social-networks__link social-networks__link_member link link" href="https://www.linkedin.com/"
-											target="_blank" rel="noreferrer noopener">
-											<svg class="social-networks__icon">
-												<use href="./images/sprite.svg#linkedin"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="member__item">
-							<img class="member__img" src="./images/team/img_team_2.jpg" alt="coотрудник команды ольга" width="270" height="260">
-							<div class="member__card">
-							  <h3 class="member__name">Ольга Репина</h3>
-							  <p class="member__position">Frontend Developer</p>
-									<ul class="social-networks list">
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.instagram.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#instagram"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__title">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.twitter.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#twitter"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.facebook.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#facebook"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.linkedin.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#linkedin"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
-							</div>
-						</li>
-						<li class="member__item">
-							<img class="member__img" src="./images/team/img_team_3.jpg" alt="cотрудник команды николай" width="270" height="260">
-							<div class="member__card">
-							  <h3 class="member__name">Николай Тарасов</h3>
-							  <p class="member__position">Marketing</p>
-									<ul class="social-networks list">
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.instagram.com/"
-											  target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#instagram"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.twitter.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#twitter"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.facebook.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#facebook"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.linkedin.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#linkedin"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
-							</div>
-						</li>
-						<li class="member__item">
-							<img class="member__img" src="./images/team/img_team_4.jpg" alt="cотрудник команды михаил" width="270" height="260">
-							<div class="member__card">
-							  <h3 class="member__name">Михаил Ермаков</h3>
-							  <p class="member__position">UI Designer</p>
-									<ul class="social-networks list">
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.instagram.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#instagram"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.twitter.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#twitter"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.facebook.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#facebook"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="social-networks__item">
-											<a class="social-networks__link social-networks__link_member link" href="https://www.linkedin.com/"
-												target="_blank" rel="noreferrer noopener">
-												<svg class="social-networks__icon">
-													<use href="./images/sprite.svg#linkedin"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section> -->
+      <section class="team section">
+        <div class="container team__container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="member list">
+            <li class="member__item">
+              <picture>
+                <source
+                  srcset="./images/team/igor-desktop.webp 1x, ./images/team/igor-desktop@2x.webp 2x"
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/igor-desktop.jpg 1x, ./images/team/igor-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team/igor-tablet.webp 1x, ./images/team/igor-tablet@2x.webp 2x"
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/igor-tablet.jpg 1x, ./images/team/igor-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team/igor-mobile.webp 1x, ./images/team/igor-mobile@2x.webp 2x"
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/igor-mobile.jpg 1x, ./images/team/igor-mobile@2x.jpg 2x"
+                  media="(min-width:280px)"
+                />
+                <img
+                  class="member__images"
+                  src="./images/team/igor-mobile.jpg"
+                  alt="Игорь Демьяненко. Дизайн продукта."
+                />
+              </picture>
+              <div class="member__card">
+                <h3 class="member__name">Игорь Демьяненко</h3>
+                <p class="member__position">Product Designer</p>
+                <ul class="social-networks list">
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link link"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="member__item">
+              <picture>
+                <source
+                  srcset="./images/team/olga-desktop.webp 1x, ./images/team/olga-desktop@2x.webp 2x"
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/olga-desktop.jpg 1x, ./images/team/olga-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team/olga-tablet.webp 1x, ./images/team/olga-tablet@2x.webp 2x"
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/olga-tablet.jpg 1x, ./images/team/olga-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team/olga-mobile.webp 1x, ./images/team/olga-mobile@2x.webp 2x"
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/olga-mobile.jpg 1x, ./images/team/olga-mobile@2x.jpg 2x"
+                  media="(min-width:280px)"
+                />
+                <img
+                  class="member__images"
+                  src="./images/team/olga-mobile.jpg"
+                  alt="Игорь Демьяненко. Дизайн продукта."
+                />
+              </picture>
+              <div class="member__card">
+                <h3 class="member__name">Ольга Репина</h3>
+                <p class="member__position">Frontend Developer</p>
+                <ul class="social-networks list">
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__title">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="member__item">
+              <picture>
+                <source
+                  srcset="./images/team/nikola-desktop.webp 1x, ./images/team/nikola-desktop@2x.webp 2x"
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/nikola-desktop.jpg 1x, ./images/team/nikola-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team/nikola-tablet.webp 1x, ./images/team/nikola-tablet@2x.webp 2x"
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/nikola-tablet.jpg 1x, ./images/team/nikola-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team/nikola-mobile.webp 1x, ./images/team/nikola-mobile@2x.webp 2x"
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/nikola-mobile.jpg 1x, ./images/team/nikola-mobile@2x.jpg 2x"
+                  media="(min-width:280px)"
+                />
+                <img
+                  class="member__images"
+                  src="./images/team/nikola-mobile.jpg"
+                  alt="Игорь Демьяненко. Дизайн продукта."
+                />
+              </picture>
+              <div class="member__card">
+                <h3 class="member__name">Николай Тарасов</h3>
+                <p class="member__position">Marketing</p>
+                <ul class="social-networks list">
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="member__item">
+              <picture>
+                <source
+                  srcset="./images/team/micha-desktop.webp 1x, ./images/team/micha-desktop@2x.webp 2x"
+                  media="(min-width:1200px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/micha-desktop.jpg 1x, ./images/team/micha-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team/micha-tablet.webp 1x, ./images/team/micha-tablet@2x.webp 2x"
+                  media="(min-width:768px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/micha-tablet.jpg 1x, ./images/team/micha-tablet@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team/micha-mobile.webp 1x, ./images/team/micha-mobile@2x.webp 2x"
+                  media="(min-width:280px)"
+                  type="image/web"
+                />
+                <source
+                  srcset="./images/team/micha-mobile.jpg 1x, ./images/team/micha-mobile@2x.jpg 2x"
+                  media="(min-width:280px)"
+                />
+                <img
+                  class="member__images"
+                  src="./images/team/micha-mobile.jpg"
+                  alt="Игорь Демьяненко. Дизайн продукта."
+                />
+              </picture>
+              <div class="member__card">
+                <h3 class="member__name">Михаил Ермаков</h3>
+                <p class="member__position">UI Designer</p>
+                <ul class="social-networks list">
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-networks__item">
+                    <a
+                      class="social-networks__link social-networks__link_member link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="social-networks__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- Clients -->
 
@@ -552,7 +792,7 @@
 				</form>
 			</div>
 		</div> -->
-    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
