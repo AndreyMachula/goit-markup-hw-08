@@ -1,3 +1,79 @@
+.hero {
+  max-width: 1600px;
+  min-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+
+  background-color: getColor('background-hero');
+  background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__title {
+    color: getColor('theme-dark-primary');
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
+    margin: 0 auto 30px auto;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1200px) {
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+  }
+
+  &__btn {
+    @include button();
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-desktop@2x.jpg);
+  }
+}
+
 // .hero {
 //   max-width: 1600px;
 //   min-height: 600px;
@@ -12,7 +88,7 @@
 //   background-position: center;
 //   background-size: cover;
 //   &__title {
-//     color: var(--white-color-text);
+//     color: white;
 //     font-weight: 900;
 //     font-size: 44px;
 //     line-height: 1.36;

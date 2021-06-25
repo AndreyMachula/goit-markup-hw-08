@@ -1,37 +1,46 @@
-.team {
-  background-color: var(--secondary-background-color);
-  &__container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-.member {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  &__card {
-    padding: 30px 32px;
-  }
-  &__name {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  &__position {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-  &__item {
-    width: 450px;
-    // height: 460px;
-  }
-}
+// .team {
+//   background-color: var(--secondary-background-color);
+//   &__container {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+// }
+// .member {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   // justify-content: center;
+//   // align-items: center;
+//   &__card {
+//     padding: 30px 32px;
+//   }
+//   &__name {
+//     color: var(--title-text-color);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     margin-bottom: 10px;
+//   }
+//   &__position {
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     margin-bottom: 16px;
+//   }
+//   &__imeges {
+//     width: 100%;
+//     height: auto;
+
+//   }
+// }
+// .member__images {
+// }
 
 // .team {
 //   background-color: var(--secondary-background-color);

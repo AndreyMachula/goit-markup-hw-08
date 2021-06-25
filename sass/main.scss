@@ -1,11 +1,21 @@
 // UTILIS
-@import './utilis/variables';
+
 @import './utilis/visually-hidden';
+@import './utilis/variables/colors';
+@import './utilis/variables/shadows';
+@import './utilis/variables/transition';
 
 // BASE
 @import './base/common';
 @import './base/section';
 @import './base/container';
+
+@import './base/fonts';
+// @import './base/variables-colors/accent';
+// @import './base/variables-colors/accent';
+// @import './base/variables-colors/accent';
+// @import './base/variables-colors/accent';
+// @import './base/variables-colors/accent';
 
 // COMPONENTS
 @import './components/section-title';
@@ -14,7 +24,8 @@
 @import './components/portfolio-filters';
 @import './components/modal-form';
 @import './components/active';
-@import './components/button';
+@import './components/mixins/button';
+@import './components/mixins/flex';
 @import './components/social-networks';
 @import './components/backdrop';
 @import './components/modal-window';
