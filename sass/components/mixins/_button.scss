@@ -9,7 +9,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: getColor('theme-dark-primary');
-  background-color: white;
+  background-color: getColor('accent-primary');
 
   transition: background-color $cubic-bezier, box-shadow $cubic-bezier;
 
