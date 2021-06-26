@@ -1,20 +1,24 @@
 .checkbox {
+  @include centeredFlex();
+  flex-wrap: wrap;
   position: relative;
   cursor: pointer;
+  font-size: 12px;
+  line-height: 1.17;
   &__input {
     top: 19px;
     left: 8px;
   }
   &__input:focus + .checkbox__icon {
-    border-color: var(--accent-color);
+    border-color: getColor(accent-primary);
   }
 
   &__input:checked + .checkbox__icon {
-    background-color: var(--accent-color);
+    background-color: getColor(accent-primary);
     background-image: url(../images/on-check.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    border-color: var(--accent-color);
+    border-color: getColor(accent-primary);
     border-radius: 2px;
   }
   &__icon {
@@ -22,13 +26,20 @@
     vertical-align: middle;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--title-text-color);
+
+    border: 2px solid getColor(text-secondary);
     border-radius: 2px;
     margin-right: 7px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__policy {
-    color: var(--accent-color);
+    color: getColor(accent-primary);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

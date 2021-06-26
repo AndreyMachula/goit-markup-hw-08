@@ -22,14 +22,14 @@
 @import './components/logo';
 @import './components/font';
 @import './components/portfolio-filters';
-@import './components/modal-form';
+@import './components/modal-window/modal-form';
 @import './components/active';
 @import './components/mixins/button';
 @import './components/mixins/flex';
 @import './components/social-networks';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/checkbox';
+@import './components/modal-window/backdrop';
+@import './components/modal-window/modal-window';
+@import './components/modal-window/checkbox';
 @import './components/mobile-menu';
 
 // LAYOUT
