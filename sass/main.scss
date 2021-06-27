@@ -9,8 +9,10 @@
 @import './base/common';
 @import './base/section';
 @import './base/container';
+@import './base/fonts/primary';
+@import './base/fonts/secondary';
 
-@import './base/fonts';
+// @import './base/fonts';
 // @import './base/variables-colors/accent';
 // @import './base/variables-colors/accent';
 // @import './base/variables-colors/accent';
@@ -33,7 +35,9 @@
 @import './components/mobile-menu';
 
 // LAYOUT
-@import './layout/header';
+@import './layout/header/header';
+@import './layout/header/menu';
+@import './layout/header/contacts';
 @import './layout/hero';
 @import './layout/features';
 @import './layout/work';

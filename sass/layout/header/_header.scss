@@ -1,0 +1,56 @@
+.header {
+  background-color: getColor(background-primary);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: block;
+    color: getColor(text-logo);
+    font-size: 24px;
+    line-height: 1.17;
+    padding: 16px 0;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+  }
+  &__mobile-btn {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
+  }
+  &__mobile-icon {
+    width: 40px;
+    height: 40px;
+    padding: 12px 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid getColor(border);
+    padding: 0;
+    &__mobile-btn {
+      display: none;
+    }
+    &__navigation {
+      display: flex;
+      align-items: center;
+    }
+    &__logo {
+      margin-right: 88px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__logo {
+      margin-right: 93px;
+      font-size: 26px;
+      line-height: 1.19;
+      padding: 24px 0;
+    }
+  }
+}
