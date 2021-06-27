@@ -629,6 +629,10 @@ address {
   }
 }
 
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features__images {
   display: flex;
   justify-content: center;
@@ -644,23 +648,15 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .features__title {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -677,8 +673,6 @@ address {
 @media screen and (min-width: 1200px) {
   .features__item {
     flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
