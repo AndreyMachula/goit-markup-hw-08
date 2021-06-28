@@ -16,6 +16,7 @@ $colors: (
   'overlay-hero': rgba(47, 48, 58, 0.4),
   'overlay-madal': rgba(0, 0, 0, 0.2),
   'overlay-cards': rgba(33, 150, 243, 0.9),
+  'backround-label': rgba(47, 48, 58, 0.8),
 );
 
 @function getColor($key) {

@@ -1,5 +1,5 @@
 .work {
-  background-color: var(--primary-background-color);
+  background-color: getColor(background-primary);
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,12 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--white-color-text);
-    background-color: var(--background-color-label);
+    color: getColor(theme-dark-primary);
+    background-color: getColor(backround-label);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
   }
 }

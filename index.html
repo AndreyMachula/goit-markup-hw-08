@@ -199,33 +199,94 @@
       </section>
 
       <!--Our work-->
-      <!-- <section class="work section">
-				<div class="container">
-					<h2 class="section-title">Чем мы занимаемся</h2>
-					<ul class="work__list list">
-						<li class="work__item">
-							<div class="work__label">	
-								<img class="work__img" src="./images/working_out/img_1.jpg" alt="десктопные приложения" width="370" height="294">
-								<p class="work__description">Десктопные приложения</p>
-							</div>
-						</li>
-						<li class="work__item">
-							<div class="work__label">	
-								<img class="work__img" src="./images/working_out/img_2.jpg" alt="мобильные приложения" width="370" height="294">
-								<p class="work__description">Мобильные приложения</p>
-							</div>
-
-						</li>
-						<li class="work__item">
-							<div class="work__label">	
-								<img class="work__img" src="./images/working_out/img_3.jpg" alt="дизайнерские решения" width="370" height="294">
-								<p class="work__description">Дизайнерские решения</p>
-							</div>
-
-						</li>
-					</ul>
-				</div>
-			</section> -->
+      <section class="work section">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="work__list list">
+            <li class="work__item">
+              <div class="work__label">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/applications-desktop.webp 1x,
+                      ./images/work/applications-desktop.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/applications-desktop.jpg    1x,
+                      ./images/work/applications-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/work/applications-desktop.jpg"
+                    alt="десктопные приложения."
+                  />
+                </picture>
+                <p class="work__description">Десктопные приложения</p>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="work__label">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/applications-mobile.webp 1x,
+                      ./images/work/applications-mobile.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/applications-mobile.jpg    1x,
+                      ./images/work/applications-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/work/applications-mobile.jpg"
+                    alt="мобильные приложения."
+                  />
+                </picture>
+                <p class="work__description">Мобильные приложения</p>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="work__label">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/design-solutions.webp 1x,
+                      ./images/work/design-solutions.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/web"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/design-solutions.jpg    1x,
+                      ./images/work/design-solutions@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/work/design-solutions.jpg"
+                    alt="дизайнерские решения"
+                  />
+                </picture>
+                <p class="work__description">Дизайнерские решения</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--Team-->
       <section class="team section">
@@ -663,77 +724,105 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
-			<div class="footer__container container">
-				<div class="address address_right">
-					<a class="logo address__logo text" href="./index.html" lang="en"><span class="logo__accent">Web</span>Studio</a>
-					<address>
-						<a class="address__company text" href="https://goo.gl/maps/fqdsJeKu8w5rpEoA8"  target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
-									Украинки, 26</a>
-					</address>		
-					<ul class="address__contacts list">	
-						<li class="address__item">
-							<a class="address__link address__link_mail text" href="mailto:info@example.com">info@example.com</a>
-						</li>
-						<li class="address__item">
-							<a class="address__link address__link_tel text" href="tel:+380991111111">+38 099 111 11 11</a>
-						</li>
-					</ul>
-					
-				</div>
-				<div class="social">
-					<p class="social__title">присоединяйтесь</p>
-					<ul class="social-networks list">
-						<li class="social-networks__item">
-							<a class="social-networks__link social-networks__link_footer" href="https://www.instagram.com/"
-							target="_blank" rel="noreferrer noopener">
-								<svg class="social-networks__icon">
-									<use href="./images/sprite.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-networks__item">
-							<a class="social-networks__link social-networks__link_footer" href="https://www.twitter.com/"
-							target="_blank" rel="noreferrer noopener">
-								<svg class="social-networks__icon">
-									<use href="./images/sprite.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-networks__item">
-							<a class="social-networks__link social-networks__link_footer" href="https://www.facebook.com/"
-							target="_blank" rel="noreferrer noopener">
-								<svg class="social-networks__icon">
-									<use href="./images/sprite.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-networks__item">
-							<a class="social-networks__link social-networks__link_footer" href="https://www.linkedin.com/"
-							target="_blank" rel="noreferrer noopener">
-								<svg class="social-networks__icon">
-									<use href="./images/sprite.svg#linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="mailing">
-						<p class="mailing__title">Подпишитесь на рассылку</p>
-					<form action="#" class="mailing__form">
-						<label class="mailing__lable">
-							<input class="mailing__iput" type="email" name="email" placeholder="E-mail" >
-						</label>
-						<button type="submit" class="button mailing__btn">
-							Подписаться
-							<svg class="mailing__icon" width="24" height="24">
-								<use href="./images/sprite-ok.svg#icon-send"></use>
-							</svg>
-						</button>
-					</form>
-				</div>
-			</div>
-		</footer> -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- <div class="page__tablet"> -->
+        <div class="address address_right">
+          <a class="logo address__logo text" href="./index.html" lang="en"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address>
+            <a
+              class="address__company text"
+              href="https://goo.gl/maps/fqdsJeKu8w5rpEoA8"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </address>
+          <ul class="address__contacts list">
+            <li class="address__item">
+              <a class="address__link address__link_mail text" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link address__link_tel text" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <p class="social__title">присоединяйтесь</p>
+          <ul class="social-networks social-footer list">
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-footer__link_footer"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-footer__link_footer"
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-footer__link_footer"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-footer__link_footer"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        <div class="mailing">
+          <p class="mailing__title">Подпишитесь на рассылку</p>
+          <form action="#" class="mailing__form">
+            <label class="mailing__lable">
+              <input class="mailing__input" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="mailing__btn">
+              Подписаться
+              <svg class="mailing__icon" width="24" height="24">
+                <use href="./images/sprite-ok.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn" data-modal-close>

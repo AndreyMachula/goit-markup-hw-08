@@ -1,17 +1,20 @@
 .portfolio {
-  background-color: var(--primary-background-color);
+  background-color: getColor(background-primary);
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-left: -8px;
+    margin-top: -15px;
   }
-  &__filter:not(:last-child) {
-    margin-right: 8px;
+  &__filter {
+    margin-left: 8px;
+    margin-top: 15px;
   }
+
   &__btn {
-    color: var(--title-text-color);
-    background-color: var(--secondary-background-color);
+    color: getColor(text-secondary);
+    background-color: getColor(background-secondary);
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -24,10 +27,26 @@
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: var(--accent-color);
-      color: var(--white-color-text);
+      background-color: getColor(accent-primary);
+      color: getColor(theme-dark-primary);
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
         0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    &__nav {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    &__nav {
+      margin-bottom: 50px;
     }
   }
 }
