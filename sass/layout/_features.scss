@@ -35,6 +35,9 @@
       flex-basis: calc((100% - 60px) / 2);
       margin-left: 30px;
       margin-top: 30px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 }
